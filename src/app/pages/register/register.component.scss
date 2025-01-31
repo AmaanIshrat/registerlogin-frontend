@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B); /* Warm gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .register-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .register-container:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #FF7E5F;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.6);
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF7E5F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #FEB47B;
+    transform: translateY(-3px); /* Subtle hover effect */
+  }
+  
+  .register-button:focus {
+    outline: none;
+  }
+  
+  .login-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  .login-text a {
+    color: #FF7E5F;
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .login-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .register-container {
+      padding: 30px 20px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    .register-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-container {
+      padding: 25px 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    .register-button {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .login-text {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,16 @@
+<div class="reset-password-container">
+    <div class="reset-password-box">
+      <h2>Reset Password</h2>
+      <p>Enter your new password to regain access to your account.</p>
+      <form (submit)="resetPassword()">
+        <div class="input-group">
+          <input type="password" [(ngModel)]="newPassword" name="newPassword" placeholder="Enter new password" required />
+        </div>
+        <button type="submit" class="btn">Reset Password</button>
+      </form>
+      <div class="links">
+        <p>Remembered your password? <a routerLink="/login">Login</a></p>
+      </div>
+    </div>
+  </div>
+  

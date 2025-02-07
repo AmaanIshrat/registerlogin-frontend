@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.startSessionTimer();
   }
-
+// hii 
   startSessionTimer() {
     const loginTime = Number(localStorage.getItem('loginTime'));
     if (!loginTime) return;
